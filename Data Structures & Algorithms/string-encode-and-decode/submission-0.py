@@ -20,7 +20,7 @@ class Solution:
             while s[j] != "#": # while we dont have the delimtied
                 j += 1 # increment by 1
             length = int(s[i:j]) #digits from i to delimiter (#)
-            s[j + 1: j + 1 + length] # first character after delimiter (#) to end of the string
+            #s[j + 1: j + 1 + length] # first character after delimiter (#) to end of the string            
             result.append(s[j + 1: j + 1 + length]) # grab that many chars AFTER the "#": the word
             i = j + 1 + length # set i to the beginning of the next string
         return result
